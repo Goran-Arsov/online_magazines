@@ -10,7 +10,12 @@
 #
 # It's strongly recommended that you check this file into your version control system.
 
-ActiveRecord::Schema.define(version: 2019_07_30_073443) do
+ActiveRecord::Schema.define(version: 2019_07_30_073704) do
+
+  create_table "issues", force: :cascade do |t|
+    t.datetime "created_at", null: false
+    t.datetime "updated_at", null: false
+  end
 
   create_table "magazines", force: :cascade do |t|
     t.datetime "created_at", null: false
